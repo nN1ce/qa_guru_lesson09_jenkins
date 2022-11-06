@@ -14,7 +14,7 @@ def test_successful():
         "browserVersion": "100.0",
         "selenoid:options": {
             "enableVNC": True,
-            "enableVideo": False
+            "enableVideo": True
         }
     }
 
@@ -37,9 +37,9 @@ def test_successful():
     with allure.step("Fill form"):
         browser.element("#firstName").set_value(first_name)
         browser.element("#lastName").set_value(last_name)
-        browser.element("#userEmail").set_value("alex@egorov.com")
+        browser.element("#userEmail").set_value("evgen@qaguru.com")
         browser.element("#genterWrapper").element(by.text("Other")).click()
-        browser.element("#userNumber").set_value("1231231230")
+        browser.element("#userNumber").set_value("9111225444")
         # browser.element("#dateOfBirthInput").click()
         # browser.element(".react-datepicker__month-select").s("July")
         # browser.element(".react-datepicker__year-select").selectOption("2008")
@@ -61,3 +61,4 @@ def test_successful():
     attach.add_logs(browser)
     attach.add_screenshot(browser)
     attach.add_html(browser)
+    attach.add_video(browser)
