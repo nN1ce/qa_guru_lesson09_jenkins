@@ -25,7 +25,6 @@ def test_successful():
         options=options)
     browser.config.driver = driver
 
-    # browser = browser_chrome
     first_name = "Evgeniy"
     last_name = "Lukyanov"
 
