@@ -1,7 +1,7 @@
 import allure
 from selene import have, by
 from selene.support.shared import browser
-from tests.utils import attach
+from utils import attach
 
 
 
