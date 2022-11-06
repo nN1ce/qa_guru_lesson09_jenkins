@@ -1,7 +1,7 @@
 import allure
 from selene import have, by
 from selene.support.shared import browser
-from tests.utils import attach
+from utils import attach
 
 
 
@@ -44,5 +44,3 @@ def test_successful():
     attach.add_logs(browser)
     attach.add_screenshot(browser)
     attach.add_html(browser)
-
-
