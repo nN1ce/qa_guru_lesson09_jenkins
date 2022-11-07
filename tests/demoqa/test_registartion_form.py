@@ -3,8 +3,8 @@ from selene import have, by
 
 
 @allure.title("Successful fill form")
-def test_successful(setup_chrome):
-    browser =setup_chrome
+def test_successful(setup_browser):
+    browser = setup_browser
     first_name = "Evgeniy"
     last_name = "Lukyanov"
 
@@ -17,9 +17,9 @@ def test_successful(setup_chrome):
     with allure.step("Fill form"):
         browser.element("#firstName").set_value(first_name)
         browser.element("#lastName").set_value(last_name)
-        browser.element("#userEmail").set_value("evgen@qaguru.com")
+        browser.element("#userEmail").set_value("alex@egorov.com")
         browser.element("#genterWrapper").element(by.text("Other")).click()
-        browser.element("#userNumber").set_value("9111225444")
+        browser.element("#userNumber").set_value("1231231230")
         # browser.element("#dateOfBirthInput").click()
         # browser.element(".react-datepicker__month-select").s("July")
         # browser.element(".react-datepicker__year-select").selectOption("2008")
