@@ -1,5 +1,5 @@
 import allure
-# from selene import have, by
+from selene import have, by
 
 
 @allure.title("Successful fill form")
